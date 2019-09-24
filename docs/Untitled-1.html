@@ -1,12 +1,79 @@
 <!doctype html>
-<html><head>
+<html>
+<link href="file:///C|/Users/180097/Desktop/WEBデザイン/jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="file:///C|/Users/180097/Desktop/WEBデザイン/jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="file:///C|/Users/180097/Desktop/WEBデザイン/jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<script src="file:///C|/Users/180097/Desktop/WEBデザイン/jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="file:///C|/Users/180097/Desktop/WEBデザイン/jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+<head>
 <meta charset="utf-8">
 <title>作品集1</title>
-<link href="作品集.css" rel="stylesheet" type="text/css">
+<link href="file:///C|/Users/180097/Desktop/WEBデザイン/作品集.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<h1>これは、レイアウト H1 タグのコンテンツです</h1>
-	<p>これは、レイアウト P タグのコンテンツです</p>
+<h1>作品集</h1>
+<p>これは、私の作った作品です</p>
+<div id="Tabs1">
+  <ul>
+	  <li><a href="#tabs-1">作品１</a></li>
+    <li><a href="#tabs-2">作品２</a></li>
+    <li><a href="#tabs-3">作品３</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>コンテンツ 1</p>
+  </div>
+  <div id="tabs-2">
+    <p>コンテンツ 2</p>
+  </div>
+  <div id="tabs-3">
+    <p>コンテンツ 3</p>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+    </script><p>これは、レイアウト P タグのコンテンツです</p>
+    <p><div id="Tabs2">
+      <ul>
+        <li><a href="#tabs-4">Tab 1</a></li>
+        <li><a href="#tabs-5">Tab 2</a></li>
+        <div id="Accordion1">
+          <h3><a href="#">セクション 1</a></h3>
+          <div>
+            <p>コンテンツ 1</p>
+          </div>
+          <h3><a href="#">セクション 2</a></h3>
+          <div>
+            <p>コンテンツ 2</p>
+          </div>
+          <h3><a href="#">セクション 3</a></h3>
+          <div>
+            <p>コンテンツ 3</p>
+          </div>
+        </div>
+        <li><a href="#tabs-6">Tab 3</a></li>
+      </ul>
+      <div id="tabs-4">
+        <p>コンテンツ 1</p>
+      </div>
+      <div id="tabs-5">
+        <p>コンテンツ 2</p>
+      </div>
+      <div id="tabs-6">
+        <p>コンテンツ 3</p>
+      </div>
+    </div></p>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs2" ).tabs(); 
+});
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+</script>
 </body>
 </html>
